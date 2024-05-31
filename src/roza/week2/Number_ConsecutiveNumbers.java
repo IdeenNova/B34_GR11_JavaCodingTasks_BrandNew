@@ -1,7 +1,7 @@
 package roza.week2;
 
 public class Number_ConsecutiveNumbers {
-
+ //hgj
 
     /*
     Write a function:
