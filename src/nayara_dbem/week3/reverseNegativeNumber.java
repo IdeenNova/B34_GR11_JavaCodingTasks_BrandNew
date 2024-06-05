@@ -1,7 +1,5 @@
 package nayara_dbem.week3;
 
-import java.util.Arrays;
-
 public class reverseNegativeNumber {
     //Write a return method that can reverse negative number and return it as int
     //ex: given int is ==> -53
