@@ -10,6 +10,7 @@ Write a method that can divide two numbers without using division operator
           int num1 = 10;
           int num2 = 5;
           divide(num1, num2);
+
      }
 
      public static void divide(int num1, int num2) {
