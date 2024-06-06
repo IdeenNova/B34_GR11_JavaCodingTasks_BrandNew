@@ -32,7 +32,33 @@ public class Number_ConsecutiveNumbers {
                                     ....
      */
 
+    public static void main(String[] args) {
 
+        codility(24);
     }
+
+    public static void codility(int target) {
+
+        if (target < 0) {
+            System.out.println("Target cannot be negative");
+        }
+
+        for (int i = 1; i <= target; i++) {
+            String output = "";
+            if (i % 2 == 0) {
+                output += "Codility";
+            }if (i % 3 == 0) {
+                output += "Test";
+            }if (i % 5 == 0) {
+                output += "Coders";
+            } else if (output.isEmpty()) {
+                output += i;
+            }
+            System.out.println(output);
+        }
+    }
+}
+
+
 
 
