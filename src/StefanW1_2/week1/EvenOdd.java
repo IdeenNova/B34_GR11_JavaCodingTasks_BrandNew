@@ -9,8 +9,8 @@ Ex:
 */
     public static void main(String[] args) {
 
-        identifyOddEven(3);
-        identifyOddEven(3);
+        identifyOddEven(5);
+        identifyOddEven(6);
 
     }
 
