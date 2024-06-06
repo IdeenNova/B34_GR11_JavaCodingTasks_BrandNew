@@ -19,7 +19,7 @@ Write a method that can divide two numbers without using division operator
 
             boolean isNegative = (dividend < 0) || (divisor < 0);
 
-            //Absolute value of dividend and divisor (handling negative numbers)
+            //Absolute value of dividend and divisor (handling negative numbers).
             int absoluteDividend = Math.abs(dividend);
             int absoluteDivisor = Math.abs(divisor);
 
