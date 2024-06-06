@@ -1,6 +1,5 @@
 package StefanW1_2.week2;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Number_SwapTwoNumbers {

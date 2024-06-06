@@ -37,7 +37,7 @@ public class Number_DivisibleBy3_5_15 {
 
         for (int i = 1; i <= target; i++) {
 
-            if(i % 15 == 0 && i % 5 == 0 && i % 3 == 0){
+            if(i % 15 == 0){ // NOTE: not necessary to evaluate 3 and 5, covered by subsequent conditions
                 divisibleBy15.append(" ").append(i);
             }else if(i % 5 == 0 ){
                 divisibleBy5.append(" ").append(i);
