@@ -2,7 +2,7 @@ package roza.week3;
 
 public class reverseNegativeNumber {
 
-    public static int reverseNegativeNumber(int number) {
+    public static int reverseNegativeNum(int number) {
         // Initialize reversedNumber to 0
         int reversedNumber = 0;
 
@@ -28,7 +28,7 @@ public class reverseNegativeNumber {
 
     public static void main(String[] args) {
         int number = -53;
-        System.out.println("Reversed Number: " + reverseNegativeNumber(number)); // Output: -35
+        System.out.println("Reversed Number: " + reverseNegativeNum(number)); // Output: -35
     }
 }
 
