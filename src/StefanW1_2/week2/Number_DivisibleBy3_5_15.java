@@ -1,4 +1,4 @@
-package mentor.week2;
+package StefanW1_2.week2;
 
 public class Number_DivisibleBy3_5_15 {
 
@@ -20,30 +20,37 @@ public class Number_DivisibleBy3_5_15 {
                  Divisible By 15 15 30 45 60 75 90
                  Divisible By 5 5 10 20 25 35 40 50 55 65 70 80 85 95 100
                  Divisible By 3 3 6 9 12 18 21 24 27 33 36 39 42 48 51 54 57 63 66 69 72 78 81 84 87 93 96 99
-
     */
 
     public static void main(String[] args) {
-        printDivisibleNumbers(100);
+
+        divisibleBy(100);
+
     }
 
-    public static void printDivisibleNumbers(int maxNumber) {
-        String divisibleBy15 = "";
-        String divisibleBy5 = "";
-        String divisibleBy3 = "";
+    public static void divisibleBy(int target){
 
-        for (int i = 1; i <= maxNumber; i++) {
-            if (i % 15 == 0) {
-                divisibleBy15 += i + " ";
-            } else if (i % 5 == 0) {
-                divisibleBy5 += i + " ";
-            } else if (i % 3 == 0) {
-                divisibleBy3 += i + " ";
+        StringBuilder divisibleBy15 = new StringBuilder("Divisible By 15");
+        StringBuilder divisibleBy5 = new StringBuilder("Divisible By 5");
+        StringBuilder divisibleBy3 = new StringBuilder("Divisible By 3");
+
+        for (int i = 1; i <= target; i++) {
+
+            if(i % 15 == 0){ // NOTE: not necessary to evaluate 3 and 5, covered by subsequent conditions
+                divisibleBy15.append(" ").append(i);
+            }else if(i % 5 == 0 ){
+                divisibleBy5.append(" ").append(i);
+            }else if(i % 3 == 0){
+                divisibleBy3.append(" ").append(i);
             }
         }
 
-        System.out.println("Divisible By 15: " + divisibleBy15);
-        System.out.println("Divisible By 5: " + divisibleBy5);
-        System.out.println("Divisible By 3: " + divisibleBy3);
+        System.out.println(divisibleBy15);
+        System.out.println(divisibleBy5);
+        System.out.println(divisibleBy3);
+
     }
+
+
+
 }

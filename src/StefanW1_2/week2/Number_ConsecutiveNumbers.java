@@ -1,4 +1,4 @@
-package mentor.week2;
+package StefanW1_2.week2;
 
 public class Number_ConsecutiveNumbers {
 
@@ -31,53 +31,34 @@ public class Number_ConsecutiveNumbers {
                                     17
                                     ....
      */
+
     public static void main(String[] args) {
-       // solution(15);
-        int N = 30;
-        printNumbersWithConditions(N);
+
+        codility(24);
     }
 
-    private static void solution(int N) {
-        String result = "";
-        for (int i = 1; i <= N; i++) {
-            if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0)
-                result += "CodilityTestCoders\n";
-            else if (i % 2 == 0 && i % 3 == 0)
-                result += "CodilityTest\n";
-            else if (i % 2 == 0 && i % 5 == 0)
-                result += "CodilityCoders\n";
-            else if (i % 3 == 0 && i % 5 == 0)
-                result += "TestCoders\n";
-            else if (i % 2 == 0)
-                result += "Codility\n";
-            else if (i % 5 == 0)
-                result += "Coders\n";
-            else if (i % 3 == 0)
-                result += "Test\n";
-            else
-                result += i + "\n";
+    public static void codility(int target) {
+
+        if (target < 0) {
+            System.out.println("Target cannot be negative");
         }
-        System.out.println(result);
-    }
-    public static void printNumbersWithConditions(int N) {
-        for (int i = 1; i <= N; i++) {
+
+        for (int i = 1; i <= target; i++) {
             String output = "";
             if (i % 2 == 0) {
                 output += "Codility";
-            }
-            if (i % 3 == 0) {
+            }if (i % 3 == 0) {
                 output += "Test";
-            }
-            if (i % 5 == 0) {
+            }if (i % 5 == 0) {
                 output += "Coders";
-            }
-            if (output.equals("")) {
+            } else if (output.isEmpty()) {
                 output += i;
             }
             System.out.println(output);
         }
     }
+}
 
-    }
+
 
 
