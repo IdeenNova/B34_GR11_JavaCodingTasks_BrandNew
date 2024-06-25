@@ -1,4 +1,4 @@
-package dylan;
+package dylan.week2;
 
 public class Number_DivisibleBy3_5_15 {
     public static void numDiv(int n){

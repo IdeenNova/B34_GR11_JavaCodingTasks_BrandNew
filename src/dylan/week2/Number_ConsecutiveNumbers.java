@@ -1,4 +1,4 @@
-package dylan;
+package dylan.week2;
 
 public class Number_ConsecutiveNumbers {
 

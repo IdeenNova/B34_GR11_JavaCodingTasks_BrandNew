@@ -1,4 +1,4 @@
-package dylan;
+package dylan.week1;
 
 public class Finra {
      /*
