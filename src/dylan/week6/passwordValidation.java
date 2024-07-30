@@ -12,6 +12,13 @@ requirements:
 
 if all requirements above are met, the method returns true, otherwise returns  false
 */
+    public static Boolean pmv(String x){
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println(pmv("abcdv"));
+    }
 
 
 
