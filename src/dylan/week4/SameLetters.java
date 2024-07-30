@@ -8,7 +8,11 @@ public class SameLetters {
     Ex:  same("abc",  "cab"); -> true
     same("abc",  "abb"); -> false:*/
     public static Boolean same(String a, String b){
-
+        String[] x = a.split("");
+        String[] y = b.split("");
+        Arrays.sort(x);
+        Arrays.sort(y);
+        return Arrays.equals(x, y);
     }
 
     public static void main(String[] args) {
