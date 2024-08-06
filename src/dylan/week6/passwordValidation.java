@@ -13,11 +13,31 @@ requirements:
 if all requirements above are met, the method returns true, otherwise returns  false
 */
     public static Boolean pmv(String x){
-
+        if (x.length() <= 6){
+            return false;
+        }
+        if (x.contains(" ")){
+            return false;
+        }
+        if (!x.matches(".*[A-Z].*")){
+            return false;
+        }
+        if (!x.matches(".*[a-z].*")){
+            return false;
+        }
+        if (!x.matches(".*[!@#$%^&*(){}|:<>?/].*")){
+            return false;
+        }
+        if (!x.matches(".*[0-9].*")){
+            return false;
+        }
+        return true;
     }
 
     public static void main(String[] args) {
         System.out.println(pmv("abcdv"));
+        System.out.println(pmv("12391248"));
+        System.out.println(pmv("Abcas*123"));
     }
 
 
